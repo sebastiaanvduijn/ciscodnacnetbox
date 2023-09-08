@@ -1,4 +1,3 @@
-from utilities.forms import StaticSelect
 from netbox.forms import NetBoxModelForm
 from .models import Settings
 
