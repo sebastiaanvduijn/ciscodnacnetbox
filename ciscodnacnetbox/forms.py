@@ -15,13 +15,13 @@ class SettingsForm(NetBoxModelForm):
             "status",
         ]
         widgets = {
-            "status": StaticSelect(
+            "status": BootstrapMixin (
                 choices=(
                     ("True", "Yes"),
                     ("False", "No"),
                 )
             ),
-            "verify": StaticSelect(
+            "verify": BootstrapMixin (
                 choices=(
                     (True, "Yes"),
                     (False, "No"),
